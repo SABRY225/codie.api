@@ -110,11 +110,13 @@ router.get('/products/filter', filterProducts);  // New route for advanced filte
 //  */
 router.get('/products/unverified',  getUnverifiedProducts); 
 /**
+ /**
  * @swagger
  * /api/products/unverified:
  *   get:
  *     summary: Get all unverified products
- *     description: Retrieve a list of all products that are not verified (isVerified: false).
+ *     description: |
+ *       Retrieve a list of all products that are not verified (isVerified: false).
  *     tags: [Product]
  *     security:
  *       - bearerAuth: []
@@ -132,7 +134,7 @@ router.get('/products/unverified',  getUnverifiedProducts);
  *       500:
  *         description: Server error.
  */
-router.get('/products/unverified',  getUnverifiedProducts); 
+router.get('/products/unverified', getUnverifiedProducts);
 /**
  * @swagger
  * /api/product/products:
